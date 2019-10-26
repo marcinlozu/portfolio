@@ -76,13 +76,31 @@ main {
 
 }
 
-.button {
+.navibar a {
+  text-decoration: none;
+}
+
+.button, .myButton {
   display: grid;
   align-content: center;
   background-color: #05386B;
   border-radius: 0.5rem;
   justify-content: center;
   color: #EDF5E1;
+  text-decoration: none;
+}
+
+
+
+/*.myButton {
+  display: grid;
+  text-decoration: none;
+  color: #EDF5E1
+}*/
+
+.button:active {
+  position: relative;
+  top: 1px;
 }
 
 .footer {
@@ -100,6 +118,10 @@ main {
   grid-template-columns: auto;
   grid-column: 1 / 4;
 
+}
+
+.myButton {
+  padding: 20px 100px;
 }
 
 .main {
