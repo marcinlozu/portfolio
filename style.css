@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Vollkorn&display=swap');
+
 * {
   border: 2px;
   border-color: black;
@@ -27,7 +29,7 @@ header, footer {
 }
 
 header h1 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 header {
