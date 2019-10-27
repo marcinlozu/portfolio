@@ -15,10 +15,6 @@ body {
 
 }
 
-article {
-  padding: 1em;
-}
-
 section{
   margin: 1em;
   padding: 1em;
@@ -67,6 +63,8 @@ main {
   grid-column: 2 / 2;
   justify-content: center;
   align-content: center;
+  grid-template-columns: 1.5fr 2.5fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .navibar {
@@ -92,8 +90,6 @@ main {
   text-decoration: none;
 }
 
-
-
 /*.myButton {
   display: grid;
   text-decoration: none;
@@ -103,6 +99,18 @@ main {
 .button:active {
   position: relative;
   top: 1px;
+}
+
+.in_main {
+  display: grid;
+  align-content: start;
+  justify-content: start;
+
+}
+
+.in_main_description {
+  display: grid;
+  justify-content: start;
 }
 
 .footer {
