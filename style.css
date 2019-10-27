@@ -63,8 +63,74 @@ main {
   grid-column: 2 / 2;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 1.5fr 2.5fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+  display: grid;
+  grid-column:  2 / 2;
+/*  align-content: center;
+  justify-content: center;*/
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  margin-top: 1rem;
+
+}
+
+.header {
+  display: grid;
+  grid-row: 1 / 1;
+  background-color: #05386B;
+  border-radius: 0.5rem;
+  justify-content: center;
+  color: #EDF5E1;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-column: 1 / 1;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 1rem;
+
+}
+
+.image {
+
+}
+
+.gallery_image, .gallery_image3, .gallery_image5, .gallery_image7 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.gallery_image:hover {
+  transform: scale(1.5) rotate(0deg);
+}
+
+.gallery_image3:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+.gallery_image5:hover {
+  transform: scale(1.25) rotate(-5deg);
+}
+
+.gallery_image7:hover {
+  transform: scale(1.25) rotate(5deg);
+}
+
+#maincontent {
+  display: grid;
+  grid-column: 2 / 2;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 
 .navibar {
@@ -90,11 +156,11 @@ main {
   text-decoration: none;
 }
 
-/*.myButton {
-  display: grid;
+.myButton {
+/*  display: grid;
   text-decoration: none;
-  color: #EDF5E1
-}*/
+  color: #EDF5E1*/
+}
 
 .button:active {
   position: relative;
