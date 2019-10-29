@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Vollkorn&display=swap');
 
+/** {
+  border: solid black;
+}*/
+
 body {
   margin: 0;
   line-height: 1.8rem;
@@ -36,11 +40,6 @@ header section {
   max-width: 640px;
 }
 
-header img {
-  width: 150px;
-  border-radius: 75px;
-}
-
 h1 {
   margin: 1em 0;
 }
@@ -51,6 +50,16 @@ main {
   grid-template-columns: 1fr 4fr 1fr;
 /*  max-width: 1920px;*/
 
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+  background-image: url(logo.jpg);
+  background-size: contain;
+  border-radius: 75px;
+  display: block;
+  margin: 0 auto;
 }
 
 .main {
@@ -90,6 +99,7 @@ main {
   grid-template-rows: auto auto;
   margin-top: 1rem;
   justify-content: center;
+  text-align: center;
 }
 
 .projects {
@@ -101,7 +111,7 @@ main {
 
 }
 
-.header {
+.header_class {
   display: grid;
   grid-row: 1 / 1;
   background-color: #05386B;
@@ -136,9 +146,9 @@ main {
 
 }
 
-.image {
+/*.image {
   overflow: hidden;
-}
+}*/
 
 .gallery_image:hover {
   transform: scale(1.5) rotate(0deg);
@@ -172,9 +182,10 @@ main {
 .button, .myButton {
   display: grid;
   align-content: center;
+  text-align: center;
   background-color: #05386B;
   border-radius: 0.5rem;
-  justify-content: center;
+  justify-content: initial;
   color: #EDF5E1;
   text-decoration: none;
 }
@@ -200,7 +211,7 @@ label {
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem;
 }
-input[type=text], select, textarea {
+input[type=text], select, textarea, #subject {
   width: 100%;
   padding: 0.8rem;
   border: none;
@@ -210,6 +221,7 @@ input[type=text], select, textarea {
   margin-bottom: 1rem;
   resize: vertical;
   background-color: #EDF5E1;
+  font-family: 'Vollkorn', serif;
 }
 
 input[type=submit] {
